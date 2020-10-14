@@ -1,0 +1,14 @@
+
+
+
+kubectl run  test2 --image=httpd
+kubectl expose pod  test2 --port=80 --type=NodePort
+kubectl get svc
+
+
+test2        NodePort    10.97.111.168   <none>        80:31214/TCP   4s
+
+
+use <IP-node:31214>
+
+
